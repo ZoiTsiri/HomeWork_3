@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+        h2 {color:indianred;}
+        </style>
+</head>
+
+<body>
+    <button onclick="Sign()">
+        <h2>Sign In</h2>
+    </button>
+    <script>
+        function Sign() {
+            let userName = prompt("Please enter your username");
+
+            let password = prompt("Please enter your password");
+
+            const adminName = "Zoi"
+            const adminPass = "123"
+
+            if (adminName == userName && adminPass == password) {
+                document.write ("<h1>" + "Welcome " + userName + "!" + "</h1>")
+            } else { 
+                alert("Unauthorized access!")
+            }
+        }
+    </script>
+</body>
+
+</html>
